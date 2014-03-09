@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Publications"
-description: "Articles I wrote for various German magazines
+description: "Articles I wrote for various German magazines"
 ---
 {% include JB/setup %}
 
