@@ -1,10 +1,19 @@
 ---
 layout: page
-title: Welcome!
+title: Welcome to my personal blog where I post about stuff I do
 tagline: Supporting tagline
 ---
 
 Nice that you're here. This is my personal blog and I post about things I do and I am interested in. Not regularly. If you have any questions I am happy you get in touch with me. Please see the [get in touch page](pages/get_in_touch.html).
+
+## Latest Post
+{% for post in site.posts limit:1 %}
+  [{{ post.title }}]({{ root_url }}{{ post.url }})
+{% endfor %}
+## Recent Posts
+{% for post in site.posts offset:1 limit:4 %}
+  [{{ post.title }}]({{ root_url }}{{ post.url }})
+{% endfor %}
 
 ## Work
 
