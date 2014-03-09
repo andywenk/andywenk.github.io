@@ -4,7 +4,7 @@ title: Welcome!
 tagline: Supporting tagline
 ---
 
-Nice that you're here. This is my personal blog and I post about things I do and I am interested in. Not regularly. If you have any questions I am happy you get in touch with me. Please see the get in touch page.
+Nice that you're here. This is my personal blog and I post about things I do and I am interested in. Not regularly. If you have any questions I am happy you get in touch with me. Please see the [get in touch page](pages/get_in_touch.html).
 
 ## Work
 
