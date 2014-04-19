@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Running local vm's with Packer, Bento and Vagrant"
-description: ""
+description: "Running local vm's with Packer, Bento and Vagrant"
 category: 
-tags: []
+tags: [packer, bento, vagrant]
 ---
 {% include JB/setup %}
 
@@ -22,7 +22,7 @@ The Bento project is providing _Templates_ for creating machine images. To be ab
     ~: mkdir vm && cd vm
     ~/vm: git clone https://github.com/opscode/bento.git
 
-The repository will be cloned into the directory _~/vm/bento_. Within the Benot repository, you will also find pre-built _Base-Boxes_ you can download and use with Vagrant. 
+The repository will be cloned into the directory _~/vm/bento_. Within the Bento repository, you will also find pre-built _Base-Boxes_ you can download and use with Vagrant. 
 
 __side note:__ I really like, that the Packer project has defined and written down the [terminology](http://www.packer.io/docs/basics/terminology.html) they are using. This helps a lot while speaking about Packer, because everybody is using the same wording. You should definitely read the page above. 
 
@@ -67,7 +67,7 @@ This is the final step where we create the machine image. Let's first move again
 
     ~/Downloads: cd ~/vm/centos-6.5
 
-Now we add our box to vagrant. It is required to set a name and the path to our box. This is just one option out of three. Please refer to the [vagrant documentation](https://docs.vagrantup.com/v2/cli/box.html) to see the other options. This will also enable us to start the box by name later:
+Now we add our box to Vagrant. It is required to set a name and the path to our box. This is just one option out of three. Please refer to the [Vagrant documentation](https://docs.vagrantup.com/v2/cli/box.html) to see the other options. This will also enable us to start the box by name later:
 
     ~/vm/centos-6.5: vagrant box add --name centos-6.5 opscode_centos-6.5_chef-provisionerless.box
     ==> box: Adding box 'centos-6.5' (v0) for provider:
@@ -118,7 +118,7 @@ Now, the virtual machine has started. We can now connect to it via ssh. The user
     Last login: Fri Apr 18 22:26:30 2014 from 10.0.2.2
     [vagrant@localhost ~]$
 
-Welcome to your first virtual machine setup with Packer, Benot and Vagrant.
+Welcome to your first virtual machine setup with Packer, Bento and Vagrant.
 
 ##Removing the box
 
