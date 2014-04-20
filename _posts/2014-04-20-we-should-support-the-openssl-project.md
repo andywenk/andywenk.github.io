@@ -15,7 +15,7 @@ Now we are safe again. Let's go back to work. Really? No! We are not and we shou
 
 ##The OpenSSL project
 
-The [OpenSSL project]() is an open source project represented by the [OpenSSL Software Foundation, Inc.](http://opensslfoundation.com/) and licensed under a [Apache like license](http://www.openssl.org/source/license.html). The main purpose of the project is to develop the SSL v2/v3 and TLS v1 protocols. These protocols are the defacto standard for cryptographic and secure transport of data in world wide used software. We use it on a daily basis - even though many of us are not aware about this fact.
+The [OpenSSL project]() is an Open Source project represented by the [OpenSSL Software Foundation, Inc.](http://opensslfoundation.com/) and licensed under a [Apache like license](http://www.openssl.org/source/license.html). The main purpose of the project is to develop the SSL v2/v3 and TLS v1 protocols. These protocols are the defacto standard for cryptographic and secure transport of data in world wide used software. We use it on a daily basis - even though many of us are not aware about this fact.
 
 The project is very small. There is a five member core team and a eleven member development team. 
 
@@ -35,13 +35,13 @@ Some OpenSSL team members are available for custom consultancy contract work.
 
 ##The OpenSSL shitstorm
 
-After the release of the Heartbleed vulnerabilty many articles haven been written about it. Various _insider_ have questioned the open source idea and have started to complain about the possibility, that such a bug can happen at all. You are all wrong!
+After the release of the Heartbleed vulnerabilty many articles have been written about it. Various _insider_ have questioned the Open Source idea and have started to complain about the possibility, that such a bug can happen at all. You are all wrong!
 
-The bug was an oversight that should not happen. Thats not questionable at all. But how many companies using OpenSSL have checked the [open source code](http://www.openssl.org/source/) before making a lot of money with services strongly relying on OpenSSL? Why did they not find the bug when it is such an easy bug? Because they belive in open source and that is a good thing. They should not complain about it in any way. They should start to support the project!
+The bug was an oversight that should not happen. Thats not questionable at all. But how many companies using OpenSSL have checked the [Open Source code](http://www.openssl.org/source/) before making a lot of money with services strongly relying on OpenSSL? Why did they not find the bug when it is such an easy bug? Because they believe in Open Source and that is a good thing. They should not complain about it in any way. They should start to support the project!
 
 ##Looking at an Open Source project
 
-The power of an open source project is its community. You can use, integrate or modify the produced source code or software at your needs. That's what the project is giving to you. The project is taking care of the development with it's core developers and integrates patches provided by contributors. It is also taking care of bugs or security issues. But the project is giving no warranty:
+The power of an Open Source project is its community. You can use, integrate or modify the produced source code or software at your needs. That's what the project is giving to you. The project is taking care of the development with it's core developers and integrates patches provided by contributors. It is also taking care of bugs or security issues. But the project is giving no warranty:
 
 > Unless required by applicable law or agreed to in writing, software
 > distributed under the License is distributed on an "AS IS" BASIS,
@@ -55,7 +55,7 @@ The positive aspects are obvious. Many people have many different skills and exp
 
 ##The problem
 
-So far, we understood that an open source project relies on its community. The problem is the following sentence:
+So far, we understood that an Open Source project relies on its community. The problem is the following sentence:
 
 > It's done when it's done!
 
@@ -65,21 +65,21 @@ This sentence has two implications:
 
 * if the community is small, the progress relies on few people. This can cause pressure or lack of reviewing code.
 
-And her we come to to problem why such a simple bug in OpenSSL was not found: the code review was made by one person who did not see it. 
+And here we come to to problem why such a simple bug in OpenSSL was not found: the code review was made by one person who did not see it. 
 
-In the [CouchDB project](http://couchdb.apache.org), we have the rule, that a patch (git pull request) has to be acknowledged (+1) by two different committers. But what to do if there are not enough committers or reviewers? The answer is simple: if we want high quality open source software, we have to support the project in various ways. This can be done with manpower and also financially.
+In the [CouchDB project](http://couchdb.apache.org), we have the rule, that a patch (git pull request) has to be acknowledged (+1) by two different committers. But what to do if there are not enough committers or reviewers? The answer is simple: if we want high quality Open Source software, we have to support the project in various ways. This can be done with manpower and also financially.
 
 ##Support the OpenSSL project
 
 I have said this before and will repeat myself again: support the projects you benefit from! Steve Marquess, co-founder, president and business manager of the [OpenSSL Software Foundation, Inc.](http://opensslfoundation.com/who.html) has written a [emotional blog post](http://veridicalsystems.com/blog/of-money-responsibility-and-pride/) you should read now. Just take the numbers. The donations are like nothing. 
 
-Again: we are using SSL on a daily basis so we have the responsibility to support the OpenSSL project. If we don't, we do not have the right to complain about our stolen password. We have to take accept the fact, that bugs can cause huge problems!
+Again: we are using SSL on a daily basis so we have the responsibility to support the OpenSSL project. If we don't, we do not have the right to complain about our stolen passwords. We have to accept the fact, that bugs can cause huge problems!
 
 ###Disclaimer
 
-This is my personal opinion. I am wether writing as a member of the Apache CouchDB PMC nor does this writing reflect the opinion of the Apache CouchDB PMC.
+This is my personal opinion. I am wether writing as a member of the Apache CouchDB PMC, nor does this writing reflect the opinion of the Apache CouchDB PMC.
 
-I have also heard about controversial discussions about the OpenSSL Software Foundation Inc. but have not read related articles yet. If you find one or wrote one, please get in touch with me (andy@nms.de). Though it will not change my opinion about the need of supporting open source projects we benefit from.
+I have also heard about controversial discussions about the OpenSSL Software Foundation Inc. but have not read related articles yet. If you find one or wrote one, please get in touch with me (andy@nms.de). Though it will not change my opinion about the need of supporting Open Source projects we benefit from.
 
 
 
