@@ -79,7 +79,7 @@ Again: we are using SSL on a daily basis so we have the responsibility to suppor
 
 This is my personal opinion. I am wether writing as a member of the Apache CouchDB PMC nor does this writing reflect the opinion of the Apache CouchDB PMC.
 
-I have also heard about controversial discussions about the OpenSSL Software Foundation Inc. but have not read related articles yet. If you found one, please get in touch with me (andy@nms.de). But it does not change my opinion about the need of supporting open source projects we benefit from.
+I have also heard about controversial discussions about the OpenSSL Software Foundation Inc. but have not read related articles yet. If you find one or wrote one, please get in touch with me (andy@nms.de). Though it will not change my opinion about the need of supporting open source projects we benefit from.
 
 
 
