@@ -75,7 +75,7 @@ I have said this before and will repeat myself again: support the projects you b
 
 Again: we are using SSL on a daily basis so we have the responsibility to support the OpenSSL project. If we don't, we do not have the right to complain about our stolen password. We have to take accept the fact, that bugs can cause huge problems!
 
-###Disclamer
+###Disclaimer
 
 This is my personal opinion. I am wether writing as a member of the Apache CouchDB PMC nor does this writing reflect the opinion of the Apache CouchDB PMC.
 
