@@ -28,6 +28,8 @@ In my humble opinion, it's a good thing. You are not forced to share DHH's opini
 
 Side Note: I also read that some [people are not happy about the language DHH is using](http://codon.com/the-dhh-problem). I can understand that and I think also it is questionable. In the [CouchDB community](http://couchdb.apache.org), we are in the process of creating the ["Project Code of Conduct and Diversity Statement"](https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=41812010). This is for a good reasen because we want to make clear, that we expect people to behave in a "empathetic, welcoming, friendly and patient" way in our community. DHH's language in his talk would not be appropriate.
 
+UPDATE: I just found the blog post [http://www.ugtastic.com/dhh-cult-personality-problem](http://www.ugtastic.com/dhh-cult-personality-problem) and I fully chare the opinion of Mike Hall.
+
 ##So we stop using Rails?
 
 Nonsense. I cannot understand, that people are moving away from using Rails because they think, a so called "leader" is moving into a wrong directinon. 
