@@ -7,6 +7,7 @@ tags:
 - repository
 - dav_svn
 - apache2
+category: 'Server'
 tumblr_url: http://andywenk.tumblr.com/post/411776108/svn-einen-svn-server-einrichten
 ---
 Moin Moin,
@@ -41,7 +42,7 @@ root@server:/etc/apache2/mods-enabled# vi dav_svn.conf
 
 Der Inhalt der Datei sieht prinzipiell so aus. Ich lasse alle Kommentar weg und schreibe eigen dazu:
 
-<pre>&lt;Location /svn&gt;                        
+<pre>&lt;Location /svn&gt;
 # muss auskommentiert werden, damit das Repository aktiviert wird
 DAV svn
 
@@ -69,9 +70,9 @@ Wenn wir alles erledigt haben starten wir den Webserver neu.
 Einen user legen wir an, indem wir diesen mit dem Program htpasswd in die Datei dav_svn.passwd eintragen. Dazu wechseln wir zuerst ins entsprechende Verzeichnis:
 
 <pre>
-root@server: cd /etc/apache2/ 
+root@server: cd /etc/apache2/
 &lt;em&gt;wenn die Datei noch nicht existiert&lt;/em&gt;
-root@server:/etc/apache2/htpasswd -c dav_svn.passwd 
+root@server:/etc/apache2/htpasswd -c dav_svn.passwd
 root@server:/etc/apache2# htpasswd dav_svn.passwd [user]
 </pre>
 
@@ -100,7 +101,7 @@ Wir müssen eine http Authentifizerung machen. Und danach sehen wir so was wie d
 
 <img src="http://media.tumblr.com/tumblr_kyf21ql3FB1qa0m1w.png"/>
 
-Damit haben wir&#8217;s auch schon geschafft. 
+Damit haben wir&#8217;s auch schon geschafft.
 
 <h3>6. Ein Projekt auschecken</h3>
 
@@ -116,7 +117,7 @@ Ausgecheckt, Revision 0.
 user@root:/tmp/
 </pre>
 
-Für Hilfe zu svn einfach svn help oder svn help [Befehl] eingeben. 
+Für Hilfe zu svn einfach svn help oder svn help [Befehl] eingeben.
 
 Dann viel Spass
 

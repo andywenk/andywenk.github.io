@@ -2,7 +2,7 @@
 layout: post
 title: "Ruby: create a Hash from Arrays"
 description: "Ruby: create a Hash from Arrays"
-category: 
+category: 'Programming'
 tags: [ruby]
 ---
 {% include JB/setup %}
@@ -60,12 +60,12 @@ We have three simple Arrays with the following structure:
         [2] "metal"
     ]
 
-These Arrays are the base for all subsequent steps to create our `Hash`.  
+These Arrays are the base for all subsequent steps to create our `Hash`.
 
 ## Combine data with the `Array#zip` method
 
 From the [documentation](http://www.ruby-doc.org/core-2.1.2/Array.html#method-i-zip)
-> Converts any arguments to arrays, then merges elements of self with 
+> Converts any arguments to arrays, then merges elements of self with
 > corresponding elements from each argument. ...
 
 So when using our data structures, we can do something like this:
@@ -86,7 +86,7 @@ So when using our data structures, we can do something like this:
         ]
     ]
 
-As you can see, `Array#zip` is creating a new Array from our two Arrays `name` and `hobbies`. The resulting Array consists of pairs from `name[0] -> hobbies[0]`, `name[1] -> hobbies[1]` and so on. If no corresponding value can be found, `nil` will be inserted in the resulting Array. 
+As you can see, `Array#zip` is creating a new Array from our two Arrays `name` and `hobbies`. The resulting Array consists of pairs from `name[0] -> hobbies[0]`, `name[1] -> hobbies[1]` and so on. If no corresponding value can be found, `nil` will be inserted in the resulting Array.
 
 The `zip` method is very helpful for creating data structures as we will see when we will create a Hash.
 
@@ -94,7 +94,7 @@ The `zip` method is very helpful for creating data structures as we will see whe
 
 From the [documentation](http://www.ruby-doc.org/core-2.1.2/Array.html#method-i-flatten)
 
-> Returns a new array that is a one-dimensional flattening of self 
+> Returns a new array that is a one-dimensional flattening of self
 > (recursively).
 
 The resulting Array of Arrays created with the `Array#zip` method is not yet in the correct form to be able to throw it into our resulting `Hash`. We have to convert it into a `one dimensional Array` because later we will create the `key` - `value` pairs like this:
@@ -157,7 +157,7 @@ Interesting is to examing the result with the `class` method:
     hash = *{'Andy' => 'Daddy'}.class
     => [Hash]
 
-As you can see, the second one is a `Hash` in a list (Array). 
+As you can see, the second one is a `Hash` in a list (Array).
 
 You can also do other cool stuff with the splat operator. Please have a look at the [4loc Blog](http://4loc.wordpress.com/2009/01/16/the-splat-operator-in-ruby/) for more details.
 
@@ -201,7 +201,7 @@ Dealing with Arrays and Hashes is daily business for developers. That for sure a
 
 ## Conclusion
 
-In this post we examined how to convert two Arrays with simple data structures in a Hash with a `key - value data structure`. This is very helpful when dealing with data and we have seen, that Ruby offers good solutions to handle these tasks. 
+In this post we examined how to convert two Arrays with simple data structures in a Hash with a `key - value data structure`. This is very helpful when dealing with data and we have seen, that Ruby offers good solutions to handle these tasks.
 
 How are you creating similar data structures? I am curious and would love to receive a message from you ... simply send it to [andy@nms.de](mailto:andy@nms.de).
 

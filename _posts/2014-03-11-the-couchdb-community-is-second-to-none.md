@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "The CouchDB community is second to none"
-description: ""
-category: 
+description: "The CouchDB community is second to none"
+category: 'CouchDB'
 tags: [couchdb]
 ---
 {% include JB/setup %}

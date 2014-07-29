@@ -2,8 +2,8 @@
 layout: post
 title: "Rack middleware in Rails to recode the URL"
 description: "Rack middleware in Rails to recode the URL"
-category: 
-tags: [rails]
+category: 'Rails'
+tags: [rails, ruby]
 ---
 {% include JB/setup %}
 
@@ -25,7 +25,7 @@ The content of the exception email is looking like this:
     * Knoten:   nms02
     * Prozess:  23810
 
-I wondered where the URL is coming from because the *+* sign in the URL should be a *%20* what is a blank. 
+I wondered where the URL is coming from because the *+* sign in the URL should be a *%20* what is a blank.
 
 The Client is nearly always the same. So I checked the webserver log files and recognized, that it is a bot from [http://archivethe.net](http://archivethe.net). The log entries are looking like this:
 
@@ -50,12 +50,12 @@ Fixing the problem
 
 The Rails application is using the part from the URL to make a lookup to the database. But the *+* sign in there is completely wrong. As mentioned before it should be *%20*. I decided to find a way to recode the URL for each GET request.
 
-Doing this in the webserver is possible but not too sexy. The other idea would be to use a gem for rewriting the URL. Nah, to heavy. The simplest possible solution is to write a very small Rack middleware and put it into the Rails Middleware stack. 
+Doing this in the webserver is possible but not too sexy. The other idea would be to use a gem for rewriting the URL. Nah, to heavy. The simplest possible solution is to write a very small Rack middleware and put it into the Rails Middleware stack.
 
 The code
 --------
 
-I will not dig deeper into [Rack](http://rack.github.io/) and the [Rails middleware](http://guides.rubyonrails.org/rails_on_rack.html) stack. What you have to know is, that the middleware has to be put together in a special order. If my middleware would be included too early, the application would crash. 
+I will not dig deeper into [Rack](http://rack.github.io/) and the [Rails middleware](http://guides.rubyonrails.org/rails_on_rack.html) stack. What you have to know is, that the middleware has to be put together in a special order. If my middleware would be included too early, the application would crash.
 
 I found out that a good place is after *Rack::ETag*. I called the middleware *RecodeUrl*. When checking the existing middleware, you will see this list:
 
@@ -115,11 +115,11 @@ To activate the middleware, an entry in *config/application.rb* is neccessary:
       end
     end
 
-When the server is started and the URL 
+When the server is started and the URL
 
     http://localhost:3000/tintenshop/tintenstrahl_drucker/hp/Business+InkJet
 
-is called, it will be recoded to 
+is called, it will be recoded to
 
     http://localhost:3000/tintenshop/tintenstrahl_drucker/hp/Business%20InkJet
 

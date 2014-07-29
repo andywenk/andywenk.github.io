@@ -2,8 +2,8 @@
 layout: post
 title: "Bundler problem with git: source"
 description: "Bundler problem with git: source"
-category: 
-tags: [rails]
+category: 'Rails'
+tags: [rails, ruby]
 ---
 {% include JB/setup %}
 
@@ -28,7 +28,7 @@ After trying out various possible solutions with no luck, I thought it must have
 Bundler cache
 -------------
 
-There are various places where bundler is caching gems. One is *~/.gems/cache/bundler/*, another is *$GEM_HOME/cache/bundler/* where *$GEM_HOME* is the directory when using *rvm* and *gemsets* and finally there is *RAILS_ROOT/vendor/cache/*. I am not sure when and if I cleared the cache directories. But it did not help anyway. 
+There are various places where bundler is caching gems. One is *~/.gems/cache/bundler/*, another is *$GEM_HOME/cache/bundler/* where *$GEM_HOME* is the directory when using *rvm* and *gemsets* and finally there is *RAILS_ROOT/vendor/cache/*. I am not sure when and if I cleared the cache directories. But it did not help anyway.
 
 Gemfile.lock
 ------------
@@ -93,17 +93,17 @@ My conslusion is, that there have been basically two problems. First, bundler is
 
 That means removing the gem did help. Furthermore there must have been some sttings or cached stuff what was forcing these problems. Removing everything did help at the end ... I think and hope.
 
-But why in the world did the above output say: 
+But why in the world did the above output say:
 
-> *Warning: You're using Rubygems 2.0.14 ...* 
+> *Warning: You're using Rubygems 2.0.14 ...*
 
 I suspect that there is a mismatch when creating a fresh gemset with the used rubygems version. And this was resolved, when reinitialising the gemset with
 
-> *rvm use ruby-2.1.1@GEMSET_NAME* 
+> *rvm use ruby-2.1.1@GEMSET_NAME*
 
 To be honest, I have no clue why that problem occured.
 
-I Hope it helps at least 
+I Hope it helps at least
 -----------------------
 
 Unfortunately this post is not explaining why the problems occured. I have some ideas but am not entirely sure. At least, I could find a way to solve the problem for me and hope that it will solve also issues for some other folks also. It's unfortunate, that it feels a bit like a black box with no way to shine into it ...

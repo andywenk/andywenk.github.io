@@ -2,7 +2,7 @@
 layout: post
 title: "CouchDB 1.5.1 has been released please promote"
 description: "CouchDB 1.5.1 has been released please promote"
-category: 
+category: 'CouchDB'
 tags: [couchdb]
 ---
 {% include JB/setup %}
@@ -31,10 +31,10 @@ We also have a Hacker News item:
 
 And several Reddit items:
 
-[www.reddit.com/.../apache_couchdb_151_released_security_release/](http://www.reddit.com/r/programming/comments/22mcl3/apache_couchdb_151_released_security_release/)  
-[www.reddit.com/.../apache_couchdb_151_released_security_release/](http://www.reddit.com/r/programming/comments/22mcl3/apache_couchdb_151_released_security_release/)  
-[www.reddit.com/.../apache_couchdb_151_released_security_release/](http://www.reddit.com/r/nosql/comments/22mcrm/apache_couchdb_151_released_security_release/)  
-[www.reddit.com/.../apache_couchdb_151_released_security_release/](http://www.reddit.com/r/Database/comments/22mcu3/apache_couchdb_151_released_security_release/)  
+[www.reddit.com/.../apache_couchdb_151_released_security_release/](http://www.reddit.com/r/programming/comments/22mcl3/apache_couchdb_151_released_security_release/)
+[www.reddit.com/.../apache_couchdb_151_released_security_release/](http://www.reddit.com/r/programming/comments/22mcl3/apache_couchdb_151_released_security_release/)
+[www.reddit.com/.../apache_couchdb_151_released_security_release/](http://www.reddit.com/r/nosql/comments/22mcrm/apache_couchdb_151_released_security_release/)
+[www.reddit.com/.../apache_couchdb_151_released_security_release/](http://www.reddit.com/r/Database/comments/22mcu3/apache_couchdb_151_released_security_release/)
 
 Please take a moment to share these links with your friends.
 

@@ -2,7 +2,7 @@
 layout: post
 title: "Use SPDY with Nginx and Passenger for Rails"
 description: "Use SPDY with Nginx and Passenger for Rails"
-category:
+category: 'Server'
 tags: [nginx, rails]
 ---
 {% include JB/setup %}
@@ -11,7 +11,7 @@ I am using [Passenger](https://www.phusionpassenger.com/) with [Nginx](http://ng
 
 As you already know, we are waiting for [HTTP/2](http://http2.github.io/) and [SPDY](http://en.wikipedia.org/wiki/SPDY). SPDY is basically the same as HTTP but does always include TLS encryption and is able to use multiplexing (plus other cool features). This means parallel transfer of assets because only one connection per client is required. Woot!
 
-Passenger does not include SPDY from scratch but Phusion is providing a patched binary you can integrate. As of this writing, the binary does support SPDY/2. Here is a list how to integrate the binary. I assume you have compiled Nginx with Passenger. Please do read first the whole list and start the work afterwards. 
+Passenger does not include SPDY from scratch but Phusion is providing a patched binary you can integrate. As of this writing, the binary does support SPDY/2. Here is a list how to integrate the binary. I assume you have compiled Nginx with Passenger. Please do read first the whole list and start the work afterwards.
 
 ##1. Follow the guide
 
@@ -23,7 +23,7 @@ I am not sure why the title has "without a recent OpenSSL" because you will see 
 
 We do have a working Nginx installation already, so there is no need to install Nginx (as stated in the guide). What we need is the patched binary and replace the existing one. I have asked Hongli in the comments below the post about why there is no nginx tar anymore. It is just renamed. Hongli has upgraded the blog post thankfully. Here is what you need to do:
 
-#### a. Add the deb source from Phusion to your sources.list. 
+#### a. Add the deb source from Phusion to your sources.list.
 
 On Ubuntu, simply add a file in the _sources.list.d_ directory
 
@@ -67,7 +67,7 @@ As written in the guide by Hongli, Phusion renamed the binary to PassengerWebHel
     sudo /etc/init.d/nginx stop
     sudo cp nginx /usr/sbin/
 
-####g. Update your Nginx vhost configuration. 
+####g. Update your Nginx vhost configuration.
 
 For the regarding SSL domain, yop need to add the keyword _spdy_ to the _listen_ directive:
 
@@ -81,10 +81,10 @@ For the regarding SSL domain, yop need to add the keyword _spdy_ to the _listen_
 
     http://spdycheck.org/#www.YOUR_DOMAIN.com
 
-####j. Check that the doamin is not vulnerable agints the Heartbleed bug 
+####j. Check that the doamin is not vulnerable agints the Heartbleed bug
 
     http://filippo.io/Heartbleed/#www.YOUR_DOMAIN.com
 
-If everything works, you should now have SPDY support for your Rails application. Go and check out the parallel transfer of the sources in your browsers developer toolbar and enjoy :-) 
+If everything works, you should now have SPDY support for your Rails application. Go and check out the parallel transfer of the sources in your browsers developer toolbar and enjoy :-)
 
 

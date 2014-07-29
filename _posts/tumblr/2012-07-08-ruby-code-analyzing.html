@@ -7,6 +7,7 @@ tags:
 - ruby
 - analyzing
 - codesmells
+category: 'Programming'
 tumblr_url: http://andywenk.tumblr.com/post/26764538662/ruby-code-analyzing
 ---
 <p><strong>Moin Moin,</strong></p>
@@ -30,11 +31,11 @@ Running reek and find code smells
 
 app/controllers/application_controller.rb -- 2 warnings:
   ApplicationController has no descriptive comment (IrresponsibleModule)
-  ApplicationController#render_500 has the name 'render_500' 
+  ApplicationController#render_500 has the name 'render_500'
    (UncommunicativeMethodName)
 app/controllers/news_controller.rb -- 2 warnings:
   NewsController has no descriptive comment (IrresponsibleModule)
-  NewsController#save_newsletter_registration calls flash 3 times 
+  NewsController#save_newsletter_registration calls flash 3 times
    (DuplicateMethodCall)
 </pre>
 
@@ -54,9 +55,9 @@ Running rails_best_practices and inform about found issues
 Source Codes:  100% |ooooooooooo| Time:   0:00:02
 app/models/image.rb:11 - change Hash Syntax to 1.9
 app/models/image.rb:19 - change Hash Syntax to 1.9
-app/controllers/pages_controller.rb:59 - move model logic into 
+app/controllers/pages_controller.rb:59 - move model logic into
   model (page use_count &gt; 4)
-app/controllers/admin/galleries_controller.rb:20 - remove 
+app/controllers/admin/galleries_controller.rb:20 - remove
   unused methods (Admin::GalleriesController#create)
 </pre>
 

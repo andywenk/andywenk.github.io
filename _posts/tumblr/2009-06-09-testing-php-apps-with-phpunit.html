@@ -5,18 +5,19 @@ date: '2009-06-09T00:00:00+02:00'
 tags:
 - php
 - phpunit
+category: 'Programming'
 tumblr_url: http://andywenk.tumblr.com/post/306975866/testing-php-apps-with-phpunit
 ---
 Moin Moin,
 
 <p>
-I am a bad programmer! This is the conclusion after reading the first lines of <a href="http://sebastian-bergmann.de/" target="_blank">Sebastian Bergmanns</a> <a href="http://www.phpunit.de/manual/3.4/en/index.html" target="_blank">manual for PHPUnit</a>. 
+I am a bad programmer! This is the conclusion after reading the first lines of <a href="http://sebastian-bergmann.de/" target="_blank">Sebastian Bergmanns</a> <a href="http://www.phpunit.de/manual/3.4/en/index.html" target="_blank">manual for PHPUnit</a>.
 </p>
 <p>
 <em>"Even good programmers make mistakes. The difference between a good programmer and a bad programmer is that the good programmer uses tests to detect his mistakes as soon as possible. The sooner you test for a mistake the greater your chance of finding it and the less it will cost to find and fix."</em>
 </p>
 <p>
-Ok - I will take my first words not too serious but I have to admit, that I do not develop test driven. The reason for that is the fact, that I never had an idea how to do it. I bought Sebastian Bergmanns <a href="http://www.amazon.de/PHPUnit-kurz-gut-Sebastian-Bergmann/dp/3897215152/ref=sr_1_2?ie=UTF8&amp;s=books&amp;qid=1244538197&amp;sr=8-2" target="_blank">"quick and dirty" PHPUnit</a> book some years ago but did not tune in to it any further. Another reason ist the fact, that <a href="http://www.e-unique.com" target="_blank">eUNIQUE</a> for example was started without any testing. Drilling tests afterwards into was expected too expensive. 
+Ok - I will take my first words not too serious but I have to admit, that I do not develop test driven. The reason for that is the fact, that I never had an idea how to do it. I bought Sebastian Bergmanns <a href="http://www.amazon.de/PHPUnit-kurz-gut-Sebastian-Bergmann/dp/3897215152/ref=sr_1_2?ie=UTF8&amp;s=books&amp;qid=1244538197&amp;sr=8-2" target="_blank">"quick and dirty" PHPUnit</a> book some years ago but did not tune in to it any further. Another reason ist the fact, that <a href="http://www.e-unique.com" target="_blank">eUNIQUE</a> for example was started without any testing. Drilling tests afterwards into was expected too expensive.
 </p>
 <p>
 Since I have an account at <a href="http://github.com/andywenk" target="_blank">github</a> and are following some folks programming in Python or Ruby I recognized, that no software is going over the wire without tests. Which is a good thing in my opinion. Realizing that we have some really stupid bugs in our software (and also in other projects of mine) opened the disussion about using tests again - at least in my mind. But mentioning, using tests would definitely be a good idea was thrown to ground with the answer: there&#8217;s no time to do that. I don&#8217;t believe in that. I think the opposite is the truth. Thanks to a tweet from Stefan Bergmann, that the PHPUnit Manual has a new CSS style, I started to read it. I will drop my experiences here in the next few posts because now I will start using tests!
@@ -176,7 +177,7 @@ Time: 0 seconds
 
 OK (1 test, 5 assertions)</pre>
 <p>
-If you see this result, everything works. 
+If you see this result, everything works.
 </p>
 <p>
 That&#8217;s it for this time. In the next posts I will write about the integration of unit tests in our software - but don&#8217;t ask me when ;-). Please go and read the manual for PHPUnit in the meantime. Thanks to Sebastian Bergman!

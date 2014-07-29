@@ -2,7 +2,8 @@
 layout: post
 title: 'Rails ActiveRecord: difference between size and length when using DISTINCT'
 date: '2012-09-19T00:16:09+02:00'
-tags: 
+tags: [rails, active-record]
+category: 'Rails'
 tumblr_url: http://andywenk.tumblr.com/post/31819637862/rails-activerecord-difference-between-size-and-length
 ---
 <p>Moin Moin,</p>
@@ -14,13 +15,13 @@ tumblr_url: http://andywenk.tumblr.com/post/31819637862/rails-activerecord-diffe
 <p>I was wondering why the pagination is not correct. So I examined it. As you can see in row 16 and 17, I figured out that there is a difference between using size and length for the result of select_printer without LIMIT and OFFSET. So how does the SQL query look like. First I show the query for size:</p>
 
 <pre>
-=# SELECT COUNT(*) 
-FROM "printers" 
-INNER JOIN "manufacturers" ON "manufacturers"."id" = "printers"."manufacturer_id" 
-INNER JOIN "printer_cartridges" ON "printer_cartridges"."printer_id" = "printers"."id" 
-WHERE "manufacturers"."shortname" = 'brother' 
+=# SELECT COUNT(*)
+FROM "printers"
+INNER JOIN "manufacturers" ON "manufacturers"."id" = "printers"."manufacturer_id"
+INNER JOIN "printer_cartridges" ON "printer_cartridges"."printer_id" = "printers"."id"
+WHERE "manufacturers"."shortname" = 'brother'
 AND "printer_cartridges"."printer_group_id" = 19;
- count 
+ count
 -------
    104
 (1 row)
@@ -31,13 +32,13 @@ AND "printer_cartridges"."printer_group_id" = 19;
 <p>Let&#8217;s see the difference when using length:</p>
 
 <pre>
-=# SELECT DISTINCT printers.id, printers.name 
-FROM "printers" 
-INNER JOIN "manufacturers" ON "manufacturers"."id" = "printers"."manufacturer_id" 
-INNER JOIN "printer_cartridges" ON "printer_cartridges"."printer_id" = "printers"."id" 
-WHERE "manufacturers"."shortname" = 'brother' 
+=# SELECT DISTINCT printers.id, printers.name
+FROM "printers"
+INNER JOIN "manufacturers" ON "manufacturers"."id" = "printers"."manufacturer_id"
+INNER JOIN "printer_cartridges" ON "printer_cartridges"."printer_id" = "printers"."id"
+WHERE "manufacturers"."shortname" = 'brother'
 AND "printer_cartridges"."printer_group_id" = 19 ORDER BY printers.name;
- id  |    name    
+ id  |    name
 -----+------------
 [...]
 (25 rows)

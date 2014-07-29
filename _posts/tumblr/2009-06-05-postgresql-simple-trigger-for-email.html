@@ -6,6 +6,7 @@ tags:
 - lower()
 - postgresql
 - trigger
+category: 'PostgreSQL'
 tumblr_url: http://andywenk.tumblr.com/post/393251869/postgresql-simple-trigger-for-email
 ---
 Moin Moin,
@@ -14,9 +15,9 @@ I actually had a little usability problem with a customer using the online regis
 
 Andy.Wenk@gmail.com or Andy.wenk@gmail.com
 
-These addresses are different for the authentication process. And that made problems for the attendees, because the people forgot in which version they saved their username. So I decided to avoid this by only allowing lower case written usernames. 
+These addresses are different for the authentication process. And that made problems for the attendees, because the people forgot in which version they saved their username. So I decided to avoid this by only allowing lower case written usernames.
 
-It would be annoying to tell the customer &#8220;please correct your username (only lower case)&#8221;. That means the application has to deal with that. Do that with PHP? No, because there are more places in the application where the username is changable (only some - don&#8217;t worry ;-) ). So the easiest way is to use a trigger in PostgreSQL. 
+It would be annoying to tell the customer &#8220;please correct your username (only lower case)&#8221;. That means the application has to deal with that. Do that with PHP? No, because there are more places in the application where the username is changable (only some - don&#8217;t worry ;-) ). So the easiest way is to use a trigger in PostgreSQL.
 
 While receivieng the username, it will be changed to lowercase using the function lowercase(). It looks like this:
 

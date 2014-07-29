@@ -7,11 +7,12 @@ tags:
 - debugging
 - irb
 - pry
+category: 'Rails'
 tumblr_url: http://andywenk.tumblr.com/post/23821244145/rails-debugging-with-pry
 ---
 <p>Moin Moin,</p>
 
-<p>debugging is one of the things a developer has to do most. One case is e.g when the customer is reporting a bug. Another one is when we are developing new software or features. 
+<p>debugging is one of the things a developer has to do most. One case is e.g when the customer is reporting a bug. Another one is when we are developing new software or features.
 Debugging is different in different languages. If you are coding Java, then it is pretty sure you are using Eclipse. It is offering a pretty good debugger inside the GUI. Developing JavaScript apps is less painless, since there are the great in-browser developer tools for <a href="https://www.google.com/intl/en/chrome/browser/" target="_blank">Google Chrome</a> or <a href="http://www.mozilla.org/en-US/firefox/new/" target="_blank">Mozilla Firefox</a>.</p>
 
 <p>Debugging in <a href="http://rubyonrails.org/" target="_blank">Rails</a> is not a pain in the ass. The <a href="http://rubygems.org/gems/ruby-debug" target="_blank">ruby-debug gem</a> is quite good. You have to start the local server with -u or &#8212;debugger. The debugger is stopping the program execution where you set the &#8216;debugger&#8217; method in your code. Inside the Rails log, there are then all the known debugger commands like &#8216;n&#8217; for next, &#8216;c&#8217; for continue and so on, available. In most cases this kind of &#8216;print_f&#8217; debugging is sufficient. There are some caveats or even shortcomings. Sometimes the scope of the debugger is wrong and you have to stop/start the server to fix this.</p>
@@ -43,7 +44,7 @@ Debugging is different in different languages. If you are coding Java, then it i
 
    printer = select_printer(true)
    printer.each do |p|
-     cartridge = Cartridge.select('DISTINCT(qraexid)').where("printer_id=?  
+     cartridge = Cartridge.select('DISTINCT(qraexid)').where("printer_id=?
        and printer_group=?", p.id, group)[0]
      printers[p.name] = {qraexid: cartridge.qraexid}
    end
@@ -61,7 +62,7 @@ end
 <pre><code> [1] pry(#&lt;Printer&gt;)&gt; total
  =&gt; 2
  [2] pry(#&lt;Printer&gt;)&gt; printer
- =&gt; [#&lt;Printer id: 37693, name: "Color InkJet CP 1160"&gt;, 
+ =&gt; [#&lt;Printer id: 37693, name: "Color InkJet CP 1160"&gt;,
    #&lt;Printer id: 37694, name: "Color InkJet CP 1700"&gt;]
  [3] pry(#&lt;Printer&gt;)&gt;
 </code></pre>

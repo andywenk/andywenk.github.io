@@ -2,7 +2,7 @@
 layout: post
 title: "Running local vm's with Packer, Bento and Vagrant"
 description: "Running local vm's with Packer, Bento and Vagrant"
-category: 
+category: 'Server'
 tags: [packer, bento, vagrant]
 ---
 {% include JB/setup %}
@@ -22,9 +22,9 @@ The Bento project is providing _Templates_ for creating machine images. To be ab
     ~: mkdir vm && cd vm
     ~/vm: git clone https://github.com/opscode/bento.git
 
-The repository will be cloned into the directory _~/vm/bento_. Within the Bento repository, you will also find pre-built _Base-Boxes_ you can download and use with Vagrant. 
+The repository will be cloned into the directory _~/vm/bento_. Within the Bento repository, you will also find pre-built _Base-Boxes_ you can download and use with Vagrant.
 
-__side note:__ I really like, that the Packer project has defined and written down the [terminology](http://www.packer.io/docs/basics/terminology.html) they are using. This helps a lot while speaking about Packer, because everybody is using the same wording. You should definitely read the page above. 
+__side note:__ I really like, that the Packer project has defined and written down the [terminology](http://www.packer.io/docs/basics/terminology.html) they are using. This helps a lot while speaking about Packer, because everybody is using the same wording. You should definitely read the page above.
 
 ##Building a box
 
@@ -35,7 +35,7 @@ First, we create a target directory:
     ~/vm: mkdir centos-6.5
 
 Now we start creating the box. This will take a while so we should be patient:
-    
+
     ~/vm: cd bento/packer
     ~/vm/bento/packer: packer build -only=virtualbox-iso ../../centos-6.5/centos-6.5-x86_64.json
 
@@ -129,7 +129,7 @@ Because all the above is very easy, we will likely use this method to create vir
     centos-6.5-2 (virtualbox, 0)
 
 So let's remove the box centos-6.5-2:
- 
+
     ~/vm/centos-6.5: vagrant box remove centos-6.5-2
     Removing box 'centos-6.5-2' (v0) with provider 'virtualbox'...
 

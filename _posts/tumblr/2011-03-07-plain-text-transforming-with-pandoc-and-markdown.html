@@ -6,6 +6,7 @@ tags:
 - pandoc
 - transforming-plain-text
 - latex
+category: 'Server'
 tumblr_url: http://andywenk.tumblr.com/post/3704842357/plain-text-transforming-with-pandoc-and-markdown
 ---
 Moin Moin,
@@ -27,7 +28,7 @@ Moin Moin,
 $ pandoc -s -t html -5 -f markdown -o TODO.html TODO.md
 </pre>
 
-<p>The options are: 
+<p>The options are:
 </p><ul><li>-s -&gt; we want a complete html file with enclosing &lt;html&gt;&lt;/html&gt; tags and not only a html snippet.</li>
 <li>-t html -&gt; the output format is html</li>
 <li>-5 -&gt; use html5</li>
@@ -40,7 +41,7 @@ $ pandoc -s -t html -5 -f markdown -o TODO.html TODO.md
 
 <pre>
 $ markdown2pdf TODO.md -o TODO.pdf
-</pre> 
+</pre>
 
 <p>Wow - the result is a PDF TODO.pdf. Cool isn&#8217;t it?</p>
 

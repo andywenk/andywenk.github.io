@@ -8,6 +8,7 @@ tags:
 - scm
 - svn
 - cvs
+category: 'Server'
 tumblr_url: http://andywenk.tumblr.com/post/29401120099/why-git-is-the-scm-you-should-use
 ---
 <p>Moin Moin,</p>
@@ -18,7 +19,7 @@ tumblr_url: http://andywenk.tumblr.com/post/29401120099/why-git-is-the-scm-you-s
 
 <p>After that we switched to SVN. That was quite good for our needs. Tortoise SVN is a nice integration into the Windows Explorer and I used that. But after throwing away fuckin&#8217; Windows finally and starting to use Ubuntu Linux, I was lost because there was no GUI for my SVN repos. So I started to learn the CLI for SVN and I liked it.</p>
 
-<p>I started to have a lot of SVN repos for all my projects. We even held the writings for our <a href="http://www.pg-praxisbuch.de/" target="_blank">PostgreSQL</a> book in a SVN repo. The experience I have with SVN is quite good. There are some ok possibilities to set access to repositories but you have to dig a little deeper to get them running. 
+<p>I started to have a lot of SVN repos for all my projects. We even held the writings for our <a href="http://www.pg-praxisbuch.de/" target="_blank">PostgreSQL</a> book in a SVN repo. The experience I have with SVN is quite good. There are some ok possibilities to set access to repositories but you have to dig a little deeper to get them running.
 One big problem is the usage of branches. Well yes you can make branches, but merging them back to a main branch is a pain in the ass. So we did not use it and this is a big fail! Another thing is the lack of a local copy of the repository. The commit command is pushing always to the central repository most likely on a different machine, accessible via a internet connection. This means, that the source code is complete only at one physical place. This is a SPOF!</p>
 
 <p>GIT is the solution for all these caveats. I use a lot of features of GIT heavily. Sure, the standard stuff like log, add, commit, pull, push and so on. But also rebase, merge and submodules. And most important: branch.</p>

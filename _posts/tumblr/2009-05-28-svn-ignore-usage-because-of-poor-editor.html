@@ -7,15 +7,16 @@ tags:
 - netbeans
 - subversion
 - svn:ignore
+category: 'Server'
 tumblr_url: http://andywenk.tumblr.com/post/393270735/svn-ignore-usage-because-of-poor-editor
 ---
 Moin Moin,
 
 first to my fans at <a href="http://www.nmmn.com" target="_blank">NMMN</a>: cooool ;-)
 
-Ok - a little more serious. It&#8217;s kind of a hobby or philosophy to find the best editor for hacking. Have you found your&#8217;s yet? I know that all the MAC users mostly use <a href="http://macromates.com/" target="_blank">TextMate</a>. And a lot of Linux users like <a href="http://www.eclipse.org/" target="_blank">eclipse</a>. After having tested and used eclipse for about two years (and three versions and three times fuckups with upgrading) I am using <a href="http://www.netbeans.org/downloads/index.html" target="_blank">Netbeans</a> these days. I installed the PHP and Python version which is running well. 
+Ok - a little more serious. It&#8217;s kind of a hobby or philosophy to find the best editor for hacking. Have you found your&#8217;s yet? I know that all the MAC users mostly use <a href="http://macromates.com/" target="_blank">TextMate</a>. And a lot of Linux users like <a href="http://www.eclipse.org/" target="_blank">eclipse</a>. After having tested and used eclipse for about two years (and three versions and three times fuckups with upgrading) I am using <a href="http://www.netbeans.org/downloads/index.html" target="_blank">Netbeans</a> these days. I installed the PHP and Python version which is running well.
 
-One point that made me go crazy all the time is the <a href="http://subversion.tigris.org/" target="_blank">SVN</a> implementation in eclipse and Netbeans. Well, the developers of Netbeans integrated svn assistance in the standard version. But it&#8217;s working so la la. So I decided to use svn from the shell. Since I use <a href="http://github.com/andywenk" target="_blank">git</a> for some stuff, this is even more familiar to me (I know that there are git clients - but hey come on! that&#8217;s not cool ;-) ). 
+One point that made me go crazy all the time is the <a href="http://subversion.tigris.org/" target="_blank">SVN</a> implementation in eclipse and Netbeans. Well, the developers of Netbeans integrated svn assistance in the standard version. But it&#8217;s working so la la. So I decided to use svn from the shell. Since I use <a href="http://github.com/andywenk" target="_blank">git</a> for some stuff, this is even more familiar to me (I know that there are git clients - but hey come on! that&#8217;s not cool ;-) ).
 
 In each project there are always files or directories which you don&#8217;t want to have in your svn repo. So you want to use the svn:ignore command. Here is a brief introduction of it&#8217;s usage.
 
@@ -48,13 +49,13 @@ Eigenschaft »svn:ignore« für ».« gesetzt</pre>
 
 The command line means, that we use the program svn and its command ps (propset) with the option svn:ignore to set the property for this folder ( . at the end) with ignoring the folder nbproject. Let&#8217;s see if this is correct:
 
-<pre>$ svn pl 
+<pre>$ svn pl
 Eigenschaften zu ».«:
   svn:ignore</pre>
 
 Ok - that means, we have set a svn property for the folder . (the actual folder). Now let&#8217;s examine what exactly is ignored:
 
-<pre>$ svn pg svn:ignore 
+<pre>$ svn pg svn:ignore
 nbproject</pre>
 
 Yep - that means, the folder nbproject is ognored for commits - as expected.
