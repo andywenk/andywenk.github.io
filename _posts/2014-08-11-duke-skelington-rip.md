@@ -29,6 +29,8 @@ _He was my family!_
 
 _He was my hero!_
 
+![Duke Skelington]({{ site.url }}/assets/duke.png)
+
 **R.I.P Duke Skelington - I miss you!**
 
 &lowast; 25.05.2000 - &dagger; 11.08.2014
