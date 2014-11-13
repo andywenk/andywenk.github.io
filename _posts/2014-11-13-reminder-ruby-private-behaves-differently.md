@@ -22,10 +22,10 @@ We agree, that the method `say` is marked private and cannot be called like so:
 
     > doc = Doc.new
     > doc.say
-    NoMethodError: private method `say' called for #<Doc:0x007f8c93087c18>
+    NoMethodError: private method `say` called for #<Doc:0x007f8c93087c18>
     from (irb):22
 
-Ok. But you already know, that this does not mean, that you can't access say from outside right? No? Her is the prove:
+Ok. But you already know, that this does not mean, that you can't access `say` from outside right? No? Here is the prove:
 
     > doc = Doc.new
     > doc.send(:say)
@@ -41,7 +41,7 @@ I assume you have learned, that you can't access private methods from a child cl
       end
     end
 
-So we want to call `say`, what is declared private in the class `Doc` in `spoken_words`. Does this work?
+So we want to call `say`, what is declared `private` in the class `Doc` in `spoken_words`. Does this work?
 
     > text_doc = TextDoc.new
     > text_doc.spoken_words
@@ -49,4 +49,4 @@ So we want to call `say`, what is declared private in the class `Doc` in `spoken
 
 Oh! Wait. WTF?
 
-The point in Ruby is, that the language does not prevent you from doing things if you really want to. It is your responsibility to deal with it - not the language implementors. Having these possibilities open a lot of doors not only in meta-programming but helps also to write less and readable code. Visibility isues? It's ypour responsibility as a developer to take care of.
+The point in Ruby is, that the language does not prevent you from doing things if you really want to. It is your responsibility to deal with it - not the language implementors. Having these possibilities opens a lot of doors not only in Ruby's meta-programming power, but helps also to write less and most importantly readable code. Visibility issues? It's your responsibility as a developer to take care of.
