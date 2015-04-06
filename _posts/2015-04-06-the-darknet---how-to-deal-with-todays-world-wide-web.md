@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The Darknet - how to deal with todays wordl wide web"
+title: "The Darknet - how to deal with todays world wide web"
 description: "Thoughts about the world wide web after reading Jamie Bartlett's book The Dark Net"
 category: 
 tags: [reading, internet, www]
