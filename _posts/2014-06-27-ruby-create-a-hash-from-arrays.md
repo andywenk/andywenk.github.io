@@ -205,4 +205,17 @@ In this post we examined how to convert two Arrays with simple data structures i
 
 How are you creating similar data structures? I am curious and would love to receive a message from you ... simply send it to [andy@nms.de](mailto:andy@nms.de).
 
+##UPDATE
+
+Thanks to [Nathan Wallace](https://twitter.com/nosuchthingas2) who pointed out that you can do this since [Ruby 2.1](http://ruby-doc.org/core-2.1.0/Array.html#method-i-to_h)
+
+    names.zip(music).to_h
+    {
+        "Verena" => "rock",
+         "Kiana" => [
+            [0] "folk",
+            [1] "disco"
+        ],
+          "Naya" => "metal"
+    }
 
