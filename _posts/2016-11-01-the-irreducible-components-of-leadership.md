@@ -9,7 +9,7 @@ tags: [leadership, company-culture]
 
 # Paul O'Neill The Irreducible Components of Leadership
 
-During a discussion regarding the Hamburg based company JIMDO and them firing 75 awesome people, I was pointed to this awesome talk by [Paul O'Neill](https://en.wikipedia.org/wiki/Paul_H._O%27Neill) about leadership (Thanks to [https://twitter.com/s0enke](@s0enke). Following you can find my notes I took, while I watched the [video](https://www.youtube.com/watch?v=htLCVqaLBvo).
+During a discussion regarding the Hamburg based company JIMDO and them firing 75 awesome people, I was pointed to this awesome talk by [Paul O'Neill](https://en.wikipedia.org/wiki/Paul_H._O%27Neill) about leadership (Thanks to [https://twitter.com/s0enke](@s0enke) ). Following you can find my notes I took, while I watched the [video](https://www.youtube.com/watch?v=htLCVqaLBvo).
 
 #### A true leader has to articulate non arguable goals
 
