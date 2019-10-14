@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/andywenk
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://andywenk.github.io
+  * I am andywenk (https://keybase.io/andywenk) on keybase.
+  * I have a public key ASC96qK-4d_-mDPql-MvN0tCpyPf7aiF1Rkv5vaKtQ8wPAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120bdeaa2bee1dffe9833ea97e32f374b42a723dfeda885d5192fe6f68ab50f303c0a",
+      "host": "keybase.io",
+      "kid": "0120bdeaa2bee1dffe9833ea97e32f374b42a723dfeda885d5192fe6f68ab50f303c0a",
+      "uid": "0b5204a96688050c703098fc67892a19",
+      "username": "andywenk"
+    },
+    "merkle_root": {
+      "ctime": 1571084412,
+      "hash": "f3f6be8153e8e260d9be0bd9cb6eff1a658bd59ffdb9ff120971ffbdfa182305d41c6d8fa4d144795c1edcdf53c7ab3bc35a22bc7a746823fce30fd725cd76b5",
+      "hash_meta": "2ad55f2afe00b8598bf44deaa9adde8e52635bd856e5ef267f434a7c84f34b95",
+      "seqno": 8122644
+    },
+    "service": {
+      "entropy": "3Haej3T/lGxSFF3wA5lqgfMw",
+      "hostname": "andywenk.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "4.6.0"
+  },
+  "ctime": 1571084462,
+  "expire_in": 504576000,
+  "prev": "5d168bea68c67ee605b331835a56ec171598e4c4ad421389140fe31296456888",
+  "seqno": 28,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgveqivuHf/pgz6pfjLzdLQqcj3+2ohdUZL+b2irUPMDwKp3BheWxvYWTESpcCHMQgXRaL6mjGfuYFszGDWlbsFxWY5MStQhOJFA/jEpZFaIjEIE3i5GwdA1Sff7q7SNzUis46PWNxlnkiTH/xuWQbTdNKAgHCo3NpZ8RALFrnDY7TKFxxaqpo/mc2LL+0TvjptbV7m3Zsn77zoyrIdhES+w2mPk9DydBKpyJVPFqM1wCfPlA0XBKEZzqZBqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIPOglJKuklLgG3eyPYpBNz3RKjetaKl27P4tsWEBB/NHo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/andywenk
+
+==================================================================
