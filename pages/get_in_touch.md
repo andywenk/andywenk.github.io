@@ -7,25 +7,12 @@ description: "Get in touch with Andy Wenk"
 
 #### email
 
-> [andy@nms.de](mailto:andy@nms.de)  
 > [andywenk@apache.org](mailto:andywenk@apache.org)  
 > [andreaswenk@sumcumo.com](mailto:andreaswenk@sumcumo.com)
-
-#### G+
-
-> [https://google.com/+AndreasWenk](https://google.com/+AndreasWenk)
-
-#### LinkedIn
-
-> [http://de.linkedin.com/in/andreaswenk](http://de.linkedin.com/in/andreaswenk)
 
 #### Xing
 
 > [https://www.xing.com/profile/Andreas_Wenk2](https://www.xing.com/profile/Andreas_Wenk2)
-
-#### about.me
-
-> [http://about.me/andywenk](http://about.me/andywenk)
 
 #### StackOverflow
 
