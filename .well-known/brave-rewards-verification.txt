@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: andywenk.github.io
+Token: edeefae9cd56bc75b92423f2a2cc6a9b8c1008b0adb349aeff6985316fc719ef
